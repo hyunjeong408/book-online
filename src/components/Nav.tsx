@@ -25,13 +25,29 @@ const Links: React.FC<{links: Link[]}> = ({links}) => {
         </div>
     )
 }
+
+const SearchBox = () => {
+    return(
+        <div className={styles['search-wrapper']}>
+            <div className={styles['input-holder']}>
+                <input type="text" className={styles['search-input']} placeholder="Type to search" />
+                <button className={styles['search-icon']}><img src="assets/search-icon.svg" alt='search-icon-logo'></img></button>
+            </div>
+        </div>
+    )
+}
+
+
 const Nav = () => {
     return(
         <nav className={styles.navbar}>
             <div className={styles['logo-container']}>
                 <span>Logo</span>
             </div>
-            <Links links={links}/>
+            <div className={styles['side-navbar']}>
+                <Links links={links}/>
+                <SearchBox />
+            </div>
         </nav>
     )
 }
