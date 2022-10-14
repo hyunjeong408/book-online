@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Nav.module.css'
 import * as data from './links.json'
+import SearchBox from './SearchBox';
 
 const linkString = JSON.stringify(data);
 const links = JSON.parse(linkString).links;
@@ -26,27 +27,16 @@ const Links: React.FC<{links: Link[]}> = ({links}) => {
     )
 }
 
-const SearchBox = () => {
-    return(
-        <div className={styles['search-wrapper']}>
-            <div className={styles['input-holder']}>
-                <input type="text" className={styles['search-input']} placeholder="Type to search" />
-                <button className={styles['search-icon']}><img src="assets/search-icon.svg" alt='search-icon-logo'></img></button>
-            </div>
-        </div>
-    )
-}
 
-
-const Nav = () => {
+function Nav() {
     return(
         <nav className={styles.navbar}>
             <div className={styles['logo-container']}>
-                <span>Logo</span>
+                <img src="assets/logo.svg"></img>
             </div>
             <div className={styles['side-navbar']}>
                 <Links links={links}/>
-                <SearchBox />
+                <SearchBox/>
             </div>
         </nav>
     )

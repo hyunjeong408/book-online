@@ -1,6 +1,6 @@
 .navbar{
     width: 95%;
-    height: 70px;
+    height: 100px;
     /* background: #d9d9d9; */
     border-bottom: 1px solid #ed1c24;
     display: flex;
@@ -21,7 +21,7 @@
     /* justify-content: space-between; */
 }
 
-.logo-container span{
+.logo-container img{
     font-weight: 500;
     cursor: pointer;
 }
