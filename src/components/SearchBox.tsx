@@ -1,11 +1,11 @@
 import React from 'react'
 import { MouseEvent, ChangeEvent, useState } from 'react';
-import styles from './Nav.module.css'
+import styles from './css/Nav.module.css'
 
 export default () => {
     let [text, setText] = useState("");
 
-    const searchText = (e) => {
+    const searchText = (e: ChangeEvent<HTMLInputElement>) => {
         // console.log(event.target.value);
         const searchText = e.target.value;
         // setText(searchText);
