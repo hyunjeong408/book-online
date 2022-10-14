@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Nav.module.css'
 import * as data from './links.json'
+import SearchBox from './SearchBox';
 
 const linkString = JSON.stringify(data);
 const links = JSON.parse(linkString).links;
@@ -25,13 +26,18 @@ const Links: React.FC<{links: Link[]}> = ({links}) => {
         </div>
     )
 }
-const Nav = () => {
+
+
+function Nav() {
     return(
         <nav className={styles.navbar}>
             <div className={styles['logo-container']}>
-                <span>Logo</span>
+                <img src="assets/logo.svg"></img>
             </div>
-            <Links links={links}/>
+            <div className={styles['side-navbar']}>
+                <Links links={links}/>
+                <SearchBox/>
+            </div>
         </nav>
     )
 }
