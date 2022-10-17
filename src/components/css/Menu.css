@@ -18,17 +18,18 @@
     font-family: 'Noto Sans';
     font-size: 14px;
     font-weight: 700;
+    text-decoration: none;
 }
 
-.link a:link{
+.link:link{
     text-decoration: none;
     color: black;
 }
-.link a:visited{
+.link:visited{
     text-decoration: none;
     color: black;
 }
-.link a:hover{
+.link:hover{
     text-decoration: none;
     color: #ed1c24;
 }
