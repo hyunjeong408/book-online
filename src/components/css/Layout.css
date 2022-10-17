@@ -4,10 +4,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-<<<<<<< HEAD
-    /* background: rebeccapurple; */
-    /* padding: 5px; */
-=======
     align-items: center;
     /* background: rebeccapurple; */
     /* padding: 5px; */
@@ -17,5 +13,4 @@
     width:90%;
     height: 300px;
     background: burlywood;
->>>>>>> 9753cdbf4793a7c8d149a6a947b88ea95a8aa45a
 }
