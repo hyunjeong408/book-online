@@ -20,29 +20,11 @@ const Links: React.FC<{links: Link[]}> = ({links}) => {
             {links.map((link: Link)=>{
                 return(
                     <Link className="link" to={link.href}>{link.label}</Link>
-                    // <div key={link.href} className='link'>
-                    //     <a href={link.href}>
-                    //         {link.label}
-                    //     </a>
-                    // </div>
                 )
             })}
         </div>
     )
 }
-
-// const Links = () => {
-//     return(
-//         <div className='links-container'>
-//             <Link className="link" to="/today">Invoices</Link>
-//             <Link className="link" to="/new">Expenses</Link>
-//             <Link className="link" to="/best">Invoices</Link>
-//             <Link className="link" to="/expenses">Expenses</Link>
-//             <Link className="link" to="/invoices">Invoices</Link>
-//             <Link className="link" to="/expenses">Expenses</Link>
-//         </div>
-//     )
-// }
 
 const Menu = () => {
     return(
