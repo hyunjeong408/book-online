@@ -1,9 +1,13 @@
-const Header = () => {
-    return(
-        <div>
-            <h1>!Header Header Hello Header Header!</h1>
-        </div>
-    )
-}
+import React from "react"
+import Nav from "./Nav"
+import './css/Header.css'
+import Menu from "./Menu";
 
-export default Header
+export default () => {
+    return (
+        <div className="headerBody">
+            <Nav/>
+            <Menu/>
+        </div>
+    );
+}

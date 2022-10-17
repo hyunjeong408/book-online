@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Nav.module.css'
+import styles from './css/Nav.module.css'
 import * as data from './links.json'
 import SearchBox from './SearchBox';
 

@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  src: url('../public/fonts/NotoSans-Light.ttf') format('woff2'),
+    url('../public/fonts/NotoSans-Light.ttf') format('woff'),
+    url('../public/fonts/NotoSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  src: url('../public/fonts/NotoSans-Regular.ttf') format('woff2'),
+    url('../public/fonts/NotoSans-Regular.ttf') format('woff'),
+    url('../public/fonts/NotoSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  src: url('../public/fonts/NotoSans-Medium.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  src: url('../public/fonts/NotoSans-Bold.ttf') format('woff2'),
+    url('../public/fonts/NotoSans-Bold.ttf') format('woff'),
+    url('../public/fonts/NotoSans-Bold.ttf') format('truetype');
+}
+
+/* * {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+} */
