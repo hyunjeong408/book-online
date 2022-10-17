@@ -37,7 +37,6 @@ function Nav() {
             <div className={styles['side-navbar']}>
                 <Links links={links}/>
                 <SearchBox/>
-                {/* <Temp/> */}
             </div>
         </nav>
     )
