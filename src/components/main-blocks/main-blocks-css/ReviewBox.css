@@ -1,0 +1,24 @@
+.review-box{
+    width: 90%;
+    /* height: 300px; */
+    padding: 0 10px 10px;
+    background: skyblue;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.box-title {
+    width: 100%;
+    text-align: start;
+    font-family: 'Noto Sans';
+    font-size: 13px;
+    font-weight: 700;
+}
+
+div.book-of-the-month{
+    width: 98%;
+    height: 230px;
+    background: white;
+}
