@@ -4,6 +4,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     /* background: rebeccapurple; */
     /* padding: 5px; */
+}
+
+.mainBody {
+    width:90%;
+    height: 300px;
+    background: burlywood;
 }
