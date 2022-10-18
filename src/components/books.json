@@ -1,0 +1,74 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "title": "아주 오랜만에 행복하다는 느낌",
+            "price": 14000,
+            "writer": "백수린",
+            "publish": "창비",
+            "pub_timestamp": "2022-10-14",
+            "transmit": "",
+            "image": "assets/books/first.jpg"
+        },
+        {
+            "id": 2,
+            "title": "내 최고의 하루는 오늘부터 시작된다",
+            "price": 16500,
+            "writer": "브리애나 위스트",
+            "publish": "비즈니스북스",
+            "pub_timestamp": "2022-10-14",
+            "transmit": "김영애",
+            "image": "assets/books/second.jpg"
+        },
+        {
+            "id": 3,
+            "title": "하늘에서 동아줄이 내려올 줄이야",
+            "price": 16000,
+            "writer": "최민지",
+            "publish": "모래알(키다리)",
+            "pub_timestamp": "2022-09-29",
+            "transmit": "",
+            "image": "assets/books/third.jpg"
+        },
+        {
+            "id": 4,
+            "title": "작은 땅의 야수들",
+            "price": 18000,
+            "writer": "김주혜",
+            "publish": "다산책방",
+            "pub_timestamp": "2022-09-28",
+            "transmit": "박소현",
+            "image": "assets/books/fourth.jpg"
+        },
+        {
+            "id": 5,
+            "title": "죽은 자 곁의 산 자들",
+            "price": 22000,
+            "writer": "헤일리 캠벨",
+            "publish": "시공사",
+            "pub_timestamp": "2022-10-05",
+            "transmit": "서미나",
+            "image": "assets/books/fifth.jpg"
+        },
+        {
+            "id": 6,
+            "title": "세계미래보고서 2023",
+            "price": 18000,
+            "writer": "박영숙, 제롬 글렌",
+            "publish": "비즈니스북스",
+            "pub_timestamp": "2022-10-11",
+            "transmit": "",
+            "image": "assets/books/sixth.jpg"
+        },
+        {
+            "id": 7,
+            "title": "마지막 이야기 전달자",
+            "price": 18000,
+            "writer": "도나 바르바 이게라",
+            "publish": "위즈덤하우스",
+            "pub_timestamp": "2022-10-05",
+            "transmit": "김선희",
+            "image": "assets/books/seventh.jpg"
+        }
+    ]
+}
