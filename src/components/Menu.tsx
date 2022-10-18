@@ -1,4 +1,8 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import App from "../App";
+import { Link } from "react-router-dom";
+
 import './css/Menu.css'
 import * as data from './links.json'
 
@@ -15,11 +19,7 @@ const Links: React.FC<{links: Link[]}> = ({links}) => {
         <div className='links-container'>
             {links.map((link: Link)=>{
                 return(
-                    <div key={link.href} className='link'>
-                        <a href={link.href}>
-                            {link.label}
-                        </a>
-                    </div>
+                    <Link className="link" to={link.href}>{link.label}</Link>
                 )
             })}
         </div>
