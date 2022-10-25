@@ -26,9 +26,13 @@ const StyledSentenceSlider = styled(Slider)`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      box-sizing: border-box;
     }
     .slick-slide slick-active{
         height:80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .slick-prev:before, .slick-next:before {
         color: black;
@@ -48,11 +52,11 @@ export default function SentenceSlider() {
       slidesToScroll: 3
     };
     return (
-      <div style={{height: "100%"}}>
+      <div>
         <StyledSentenceSlider {...settings}>
             {books.map((sentence: Sentence)=>{
                 return(
-                    <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+                    <div style={{backgroundColor: "pink", width: "100%"}}>
                         <div className="sentence-height">
                             <div className="sentence-line-clamp">
                                 {sentence.content}
