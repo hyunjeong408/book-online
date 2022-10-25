@@ -1,5 +1,6 @@
 import React from "react";
 import './main-blocks-css/SentenceBox.css'
+import SentenceSlider from "./SentenceSlider";
 
 export default () => {
     return (
@@ -8,7 +9,7 @@ export default () => {
                 한 줄 읽기
             </p>
             <div className="sentences">
-                Here
+                <SentenceSlider/>
             </div>
 
         </div>
