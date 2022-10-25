@@ -2,7 +2,6 @@
     width: 90%;
     /* height: 300px; */
     padding: 0 10px 10px;
-    background: skyblue;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -19,6 +18,63 @@ p.box-title {
 
 div.book-of-the-month{
     width: 98%;
-    height: 230px;
-    background: white;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid gray;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+div.book-img {
+    width: 30%;
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+div.book-img img{
+    height: 200px;
+}
+
+div.book-info{
+    width: 60%;
+    box-sizing: content-box;
+}
+
+p.book-title{
+    text-align: start;
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    font-weight: 700;
+}
+
+p.book-writer{
+    text-align: start;
+    font-family: 'Noto Sans';
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.book-content-line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    font-size: 11px;
+    font-family:'Noto Sans';
+    font-weight:500;
+    text-align: start;
+
+}
+.book-content-height{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    box-sizing: border-box;
 }

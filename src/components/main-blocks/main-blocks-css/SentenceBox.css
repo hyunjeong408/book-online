@@ -1,8 +1,7 @@
 .sentence-box{
     width: 90%;
     /* height: 300px; */
-    padding: 0 10px 10px;
-    background: olive;
+    padding: 15px 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -19,6 +18,30 @@ p.box-title {
 
 div.sentences{
     width: 98%;
-    height: 150px;
-    background: white;
+    height: 80px;
+}
+
+.sentence-line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    font-size: 10px;
+    font-family:'Noto Sans';
+    font-weight:500;
+    background-color: #f1f3f4;
+
+}
+.sentence-height{
+    display: flex;
+    height: 50px;
+    margin: 0px 15px;
+    padding: 1px 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 7px;
+    background-color: #f1f3f4;
 }

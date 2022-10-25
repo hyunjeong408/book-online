@@ -1,4 +1,5 @@
 import React from "react";
+import BookSlider from "./BookSlider";
 import './main-blocks-css/PopularBox.css'
 
 export default () => {
@@ -8,7 +9,7 @@ export default () => {
                 지금 인기 있는 책
             </p>
             <div className="books">
-                Here
+                <BookSlider/>
             </div>
 
         </div>
