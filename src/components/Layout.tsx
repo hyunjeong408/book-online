@@ -1,5 +1,5 @@
 import React from "react";
-import './css/Layout.css'
+import styles from './css/Layout.module.css'
 import Footer from "./Footer";
 import Header from "./Header";
 import PopularBox from "./main-blocks/PopularBox";
@@ -8,7 +8,7 @@ import SentenceBox from "./main-blocks/SentenceBox";
 
 export default () => {
     return (
-        <div className="layout">
+        <div className={styles['layout']}>
             <Header/>
             <PopularBox/>
             <SentenceBox/>

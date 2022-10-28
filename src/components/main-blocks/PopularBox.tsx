@@ -1,14 +1,14 @@
 import React from "react";
 import BookSlider from "./BookSlider";
-import './main-blocks-css/PopularBox.css'
+import styles from './main-blocks-css/PopularBox.module.css'
 
 export default () => {
     return (
-        <div className="popular-box">
-            <p className="box-title">
+        <div className={styles['popular-box']}>
+            <p className={styles['box-title']}>
                 지금 인기 있는 책
             </p>
-            <div className="books">
+            <div className={styles['books']}>
                 <BookSlider/>
             </div>
 

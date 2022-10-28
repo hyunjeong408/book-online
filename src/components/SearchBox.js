@@ -1,6 +1,6 @@
 import React from 'react'
 import { MouseEvent, ChangeEvent, useState } from 'react';
-import styles from './Nav.module.css'
+import styles from './css/Nav.module.css'
 
 export default () => {
     let [text, setText] = useState("");

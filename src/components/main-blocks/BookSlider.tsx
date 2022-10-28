@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 
 import * as data from '../books.json';
-import './main-blocks-css/PopularBox.css'
+import styles from './main-blocks-css/PopularBox.module.css'
 const bookListString = JSON.stringify(data);
 const books = JSON.parse(bookListString).books;
 
@@ -70,8 +70,8 @@ export default function BookSlider() {
                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
                             <img key={book.id} src={book.image} style={{height: '180px', boxShadow:"2.5px 2.5px 5px grey"}}></img>
                         </div>
-                        <div className="title-height">
-                            <div className="line-clamp">
+                        <div className={styles['title-height']}>
+                            <div className={styles['line-clamp']}>
                                 {book.title}
                             </div>
                         </div>

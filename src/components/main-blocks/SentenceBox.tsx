@@ -1,14 +1,14 @@
 import React from "react";
-import './main-blocks-css/SentenceBox.css'
+import styles from './main-blocks-css/SentenceBox.module.css'
 import SentenceSlider from "./SentenceSlider";
 
 export default () => {
     return (
-        <div className="sentence-box">
-            <p className="box-title">
+        <div className={styles['sentence-box']}>
+            <p className={styles['box-title']}>
                 한 줄 읽기
             </p>
-            <div className="sentences">
+            <div className={styles['sentences']}>
                 <SentenceSlider/>
             </div>
 

@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 
 import * as data from '../sentences.json';
-import './main-blocks-css/SentenceBox.css'
+import styles from './main-blocks-css/SentenceBox.module.css'
 const sentencesJSON = JSON.stringify(data);
 const books = JSON.parse(sentencesJSON).sentences;
 
@@ -57,8 +57,8 @@ export default function SentenceSlider() {
             {books.map((sentence: Sentence)=>{
                 return(
                     <div style={{backgroundColor: "pink", width: "100%"}}>
-                        <div className="sentence-height">
-                            <div className="sentence-line-clamp">
+                        <div className={styles['box-height']}>
+                            <div className={styles['line-clamp']}>
                                 {sentence.content}
                             </div>
                         </div>

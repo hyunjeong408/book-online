@@ -61,7 +61,7 @@ p.book-writer{
     font-weight: 500;
 }
 
-.book-content-line-clamp {
+.line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;  
@@ -72,9 +72,6 @@ p.book-writer{
     text-align: start;
 
 }
-.book-content-height{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+.content-height{
     box-sizing: border-box;
 }
