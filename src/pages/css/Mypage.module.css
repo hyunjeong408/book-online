@@ -1,0 +1,88 @@
+.layout {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-page-title{
+    margin-top: 50px;
+    display: flex;
+    width: 80%;
+    height: 50px;
+    font-family: 'Noto Sans';
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    padding:10px;
+    border-bottom: 1.5px solid black;
+    box-sizing: border-box;
+}
+
+.my-page-box{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    background-color: cadetblue;
+}
+
+.profile-img-box{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+}
+
+.profile-img{
+    width: 250px;
+    height: 300px;
+    background-color: gray;
+}
+
+.profile-info-box{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    background-color: darkgoldenrod;
+}
+
+.profile-name-change{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.change-name{
+    width: 60%;
+}
+
+.change-btn{
+    width: 70px;
+    height: 40px;
+    background-color: #ed1c24;
+}
+.profile-info{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.profile-info-txt{
+    flex: 1 1 40%;
+    padding: 5px;
+    text-align: start;
+    font-family: 'Noto Sans';
+    font-size: 13px;
+    font-weight: 700;
+    background-color: chartreuse;
+}

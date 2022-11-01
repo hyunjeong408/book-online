@@ -13,6 +13,7 @@ import New from './pages/New';
 import Best from './pages/Best';
 import Steady from './pages/Steady';
 import Read from './pages/Read';
+import MyPage from './pages/MyPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -28,6 +29,7 @@ root.render(
         <Route path="best" element={<Best />} />
         <Route path="steady" element={<Steady />} />
         <Route path="read" element={<Read />} />
+        <Route path="about" element={<MyPage />} />
       </Routes>
     </BrowserRouter>
     {/* <App /> */}
