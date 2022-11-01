@@ -8,6 +8,11 @@ import {
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Today from './pages/Today';
+import New from './pages/New';
+import Best from './pages/Best';
+import Steady from './pages/Steady';
+import Read from './pages/Read';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,11 +22,11 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="today" element={<App />} />
-        <Route path="new" element={<App />} />
-        <Route path="best" element={<App />} />
-        <Route path="steady" element={<App />} />
-        <Route path="read" element={<App />} />
+        <Route path="today" element={<Today />} />
+        <Route path="new" element={<New />} />
+        <Route path="best" element={<Best />} />
+        <Route path="steady" element={<Steady />} />
+        <Route path="read" element={<Read />} />
       </Routes>
     </BrowserRouter>
     {/* <App /> */}
