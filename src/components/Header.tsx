@@ -3,11 +3,17 @@ import Nav from "./Nav"
 import styles from './css/Header.module.css'
 import Menu from "./Menu";
 
-export default () => {
+type Page = {
+    category: string;
+}
+function Header (page: Page) {
     return (
         <div className={styles['headerBody']}>
             <Nav/>
-            <Menu/>
+            <Menu category={page.category}/>
         </div>
     );
 }
+
+
+export default Header;
