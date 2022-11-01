@@ -1,0 +1,104 @@
+.layout {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-main-info{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    justify-content: space-between;
+}
+.book-img{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.book-about{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+}
+.book-about .title{
+    text-align: start;
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    font-weight: 700;
+}
+.book-about .about{
+    text-align: start;
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    font-weight: 500;
+}
+.book-about .stars{
+    text-align: start;
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    font-weight: 700;
+}
+.book-about .detail{
+    text-align: start;
+    font-family: 'Noto Sans';
+    font-size: 13px;
+    font-weight: 300;
+}
+.buttons{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgreen;
+}
+
+.introduction, .review-by-publish, .author-introduce, .book-critic{
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color:bisque;
+    text-align: start;
+}
+
+.introduction .title{
+    text-align: start;
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
+.book-review{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color:blue;
+    text-align: start;
+}
+.book-review .title{
+    text-align: start;
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+.book-review .write{
+    height: 100px;
+    background-color: aqua;
+}
+.book-review .read{
+    height: 100px;
+    background-color: brown;
+}

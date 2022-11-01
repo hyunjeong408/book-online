@@ -14,6 +14,7 @@ import Best from './pages/Best';
 import Steady from './pages/Steady';
 import Read from './pages/Read';
 import MyPage from './pages/MyPage';
+import Detail from './pages/Detail';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -28,7 +29,7 @@ root.render(
         <Route path="new" element={<New />} />
         <Route path="best" element={<Best />} />
         <Route path="steady" element={<Steady />} />
-        <Route path="read" element={<Read />} />
+        <Route path="read" element={<Detail />} />
         <Route path="about" element={<MyPage />} />
       </Routes>
     </BrowserRouter>
