@@ -33,6 +33,7 @@ root.render(
         <Route path="read" element={<Detail />} />
         <Route path="about" element={<MyPage />} />
         <Route path="login" element={<Login />} />
+        {/* <Route path="kakaoLogin" element={<KakaoLogin />} /> */}
       </Routes>
     </BrowserRouter>
     {/* <App /> */}
