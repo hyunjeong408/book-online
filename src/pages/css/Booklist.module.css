@@ -1,4 +1,63 @@
-.Today {
+.layout {
+    width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.have-sidebar{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.have-sidebar .sidebar{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.have-sidebar .list{
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+}
+
+.book-slide{
+    width:95%;
+    height: 300px;
+    background-color: aqua;
+}
+
+.book-list{
+    width:95%;
+    height: 700px;
     background-color: burlywood;
+}
+
+.side-menu{
+    width:95%;
+    height: 350px;
+    background-color: blanchedalmond;
+}
+
+.side-btn{
+    width: 80%;
+    height: 250px;
+    background-color:cornflowerblue;
+}
+
+.btn-week{
+
+}
+
+.btn-day{
+
 }

@@ -14,23 +14,34 @@ type Link = {
     href: string;
 }
 
-const Links: React.FC<{links: Link[]}> = ({links}) => {
+type Page = {
+    category: string;
+}
+
+const Links: React.FC<{links: Link[], page: Page}> = ({links, page}) => {
     return (
         <div className={styles['links-container']}>
             {links.map((link: Link)=>{
-                return(
-                    <Link className={styles['link']} to={link.href}>{link.label}</Link>
-                )
+                if(page.category==link.label){
+                    return(
+                        <Link className={styles['link']} to={link.href} style={{color: "#ed1c24"}}>{link.label}</Link>
+                    )
+                }
+                else{
+                    return(
+                        <Link className={styles['link']} to={link.href}>{link.label}</Link>
+                    )
+                }
             })}
         </div>
     )
 }
 
-const Menu = () => {
+const Menu = (page: Page) => {
     return(
         <div className={styles['menu']}>
             <img className={styles['btn-menu-full']} src="assets/menu-unselect.svg"></img>
-            <Links links={menuLinks}/>
+            <Links links={menuLinks} page={page}/>
         </div>
     );
 }

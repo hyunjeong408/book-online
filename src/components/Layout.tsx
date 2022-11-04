@@ -6,14 +6,32 @@ import PopularBox from "./main-blocks/PopularBox";
 import ReviewBox from "./main-blocks/ReviewBox";
 import SentenceBox from "./main-blocks/SentenceBox";
 
-export default () => {
-    return (
-        <div className={styles['layout']}>
-            <Header/>
-            <PopularBox/>
-            <SentenceBox/>
-            <ReviewBox/>
-            <Footer/>
-        </div>
-    );
+type Page = {
+    category: string;
+}
+
+export default (page: Page) => {
+    if (page){
+        return (
+            <div className={styles['layout']}>
+                <Header category={page.category}/>
+                <PopularBox/>
+                <SentenceBox/>
+                <ReviewBox/>
+                <Footer/>
+            </div>
+        );
+    }
+    else{
+        return (
+            <div className={styles['layout']}>
+                <Header category="Best"/>
+                <PopularBox/>
+                <SentenceBox/>
+                <ReviewBox/>
+                <Footer/>
+            </div>
+        );
+    }
+    
 }
