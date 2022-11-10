@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import styles from './css/Detail.module.css';
 
@@ -73,7 +74,7 @@ function Detail() {
                 읽기
             </div>
         </div>
-
+        <Footer/>
     </div>
   );
 }
