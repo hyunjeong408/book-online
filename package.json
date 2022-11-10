@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
@@ -45,6 +46,7 @@
   },
   "devDependencies": {
     "@types/jquery": "^3.5.14",
+    "@types/react-modal": "^3.13.1",
     "@types/react-slick": "^0.23.10",
     "@types/styled-components": "^5.1.26",
     "styled-components": "^5.3.6"

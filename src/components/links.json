@@ -7,6 +7,10 @@
         {
             "label": "About",
             "href": "/about"
+        },
+        {
+            "label": "로그인",
+            "href": "/login"
         }
     ],
     "menus": [

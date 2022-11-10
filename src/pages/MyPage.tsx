@@ -1,4 +1,5 @@
 import React, { ChangeEvent, useState } from 'react';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import styles from './css/Mypage.module.css';
 
@@ -62,6 +63,7 @@ function MyPage() {
             </div>
           </div>
         </div>
+        <Footer/>
     </div>
   );
 }

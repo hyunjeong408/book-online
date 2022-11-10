@@ -15,6 +15,8 @@ import Steady from './pages/Steady';
 import Read from './pages/Read';
 import MyPage from './pages/MyPage';
 import Detail from './pages/Detail';
+import Login from './pages/Login';
+import KakaoLogin from './pages/KakaoLogin';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -31,6 +33,8 @@ root.render(
         <Route path="steady" element={<Steady />} />
         <Route path="read" element={<Detail />} />
         <Route path="about" element={<MyPage />} />
+        <Route path="login" element={<Login />} />
+        <Route path="kakaoLogin" element={<KakaoLogin />} />
       </Routes>
     </BrowserRouter>
     {/* <App /> */}
