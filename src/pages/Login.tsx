@@ -1,9 +1,11 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, useState, useEffect } from 'react';
 import styles from './css/Login.module.css';
 import { REST_API_KEY, REDIRECT_URI } from '../kakaoLoginInfo.js'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Modal from 'react-modal';
+import { response } from 'express';
+import axios from "axios";
 
 function Login() {
   const KAKAO_AUTH_URI = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}`
@@ -13,24 +15,43 @@ function Login() {
   let [joinModalOpen, setJoinModalOpen] = useState(false);
   let [id, setId] = useState("");
   let [pw, setPw] = useState("");
+  let [name, setName] = useState("");
   const inputID = (e: ChangeEvent<HTMLInputElement>) => {
     setId(e.target.value);
   }
   const inputPW = (e: ChangeEvent<HTMLInputElement>) => {
     setPw(e.target.value);
   }
+  const inputName = (e: ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
+  }
   const clickLoginBtn = () => {
     console.log(id, pw);
+  }
+  const clickJoinBtn = () => {
+    axios.post('/login', {
+      user_name: name,
+      user_id: id,
+      user_pw: pw
+    })
+    .then(function(response){
+      console.log(response);
+      return response.data;
+    })
+    .catch(function(error){
+      console.log('실패함')
+    })
+    setJoinModalOpen(false);
   }
   return (
     <div className={styles['layout']}>
         <Header category="로그인"/>
         <Modal isOpen={joinModalOpen} className={styles['joinModalBox']}>
           <p>회원가입</p>
-          <input type="text" placeholder="이름"></input>
-          <input type="text" placeholder="아이디"></input>
-          <input type="password" placeholder="비밀번호"></input>
-          <button onClick={()=> setJoinModalOpen(false)}>Modal Open</button>
+          <input type="text" onChange={inputName} placeholder="이름"></input>
+          <input type="text" onChange={inputID} placeholder="아이디"></input>
+          <input type="password" onChange={inputPW} placeholder="비밀번호"></input>
+          <button onClick={clickJoinBtn}>Modal Open</button>
         </Modal>
         <div className={styles['mainBox']}>
             <div className={styles['loginBox']}>

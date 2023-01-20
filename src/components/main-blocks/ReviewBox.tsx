@@ -4,20 +4,17 @@ import styles from './main-blocks-css/ReviewBox.module.css'
 export default () => {
     return (
         <div className={styles['review-box']}>
-            <p className={styles['box-title']}>
-                비평: 이달의 책
-            </p>
+            <div className={styles['box-title']}>
+                이달의 책
+            </div>
             <div className={styles['book-of-the-month']}>
-                <div className={styles['book-img']}>
-                    <img src="assets/books/first.jpg"/>
-                </div>
                 <div className={styles['book-info']}>
-                    <p className={styles['book-title']}>
+                    <div className={styles['book-title']}>
                         마인 Mine
-                    </p>
-                    <p className={styles['book-writer']}>
+                    </div>
+                    <div className={styles['book-writer']}>
                         마이클 헬러, 제임스 살츠먼
-                    </p>
+                    </div>
                     <div className={styles['content-height']}>
                         <div className={styles['line-clamp']}>
                     역사, 심리, 행동경제학의 대가들이 추천한 올해의 책!<br/>
@@ -28,9 +25,6 @@ export default () => {
                     왜 빈 그네는 먼저 온 아이부터 타는 걸까?<br/>
                     왜 머리카락은 팔 수 있는데 장기 거래는 불법일까?<br/>
                     <br/>
-                    왜 빈 그네는 먼저 온 아이부터 타는 걸까?<br/>
-                    왜 머리카락은 팔 수 있는데 장기 거래는 불법일까?<br/><br/>
-
                     </div></div>
                 </div>
             </div>

@@ -66,7 +66,7 @@ export default function BookSlider() {
         <StyledBookSlider {...settings}>
             {books.map((book: Book)=>{
                 return(
-                    <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+                    <div key={book.id} style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
                         <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
                             <img key={book.id} src={book.image} style={{height: '180px', boxShadow:"2.5px 2.5px 5px grey"}}></img>
                         </div>

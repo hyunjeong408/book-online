@@ -5,6 +5,7 @@ import Header from "./Header";
 import PopularBox from "./main-blocks/PopularBox";
 import ReviewBox from "./main-blocks/ReviewBox";
 import SentenceBox from "./main-blocks/SentenceBox";
+import TopBox from "./main-blocks/TopBox";
 
 type Page = {
     category: string;
@@ -15,9 +16,9 @@ export default (page: Page) => {
         return (
             <div className={styles['layout']}>
                 <Header category={page.category}/>
-                <PopularBox/>
+                <TopBox/>
                 <SentenceBox/>
-                <ReviewBox/>
+                <PopularBox/>
                 <Footer/>
             </div>
         );
@@ -26,9 +27,9 @@ export default (page: Page) => {
         return (
             <div className={styles['layout']}>
                 <Header category="Best"/>
-                <PopularBox/>
+                <TopBox/>
                 <SentenceBox/>
-                <ReviewBox/>
+                <PopularBox/>
                 <Footer/>
             </div>
         );

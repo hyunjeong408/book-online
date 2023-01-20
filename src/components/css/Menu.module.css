@@ -31,5 +31,5 @@
 }
 .link:hover{
     text-decoration: none;
-    color: #ed1c24;
+    color: var(--main-very-pery);
 }

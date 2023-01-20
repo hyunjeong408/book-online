@@ -17,7 +17,7 @@ export default () => {
     return(
         <div className={styles['search-wrapper']}>
             <div className={styles['input-holder']}>
-                <input type="text" onChange={searchText} className={styles['search-input']} placeholder="Type to search" />
+                <input type="text" onChange={searchText} className={styles['search-input']} placeholder="검색어를 입력하세요" />
                 <button className={styles['search-icon']}onClick={clickSearchBtn} ><img src="assets/search-icon.svg" alt='search-icon-logo'></img></button>
             </div>
         </div>

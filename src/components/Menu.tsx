@@ -24,12 +24,12 @@ const Links: React.FC<{links: Link[], page: Page}> = ({links, page}) => {
             {links.map((link: Link)=>{
                 if(page.category==link.label){
                     return(
-                        <Link className={styles['link']} to={link.href} style={{color: "#ed1c24"}}>{link.label}</Link>
+                        <Link key={link.label} className={styles['link']} to={link.href} style={{color: "#ed1c24"}}>{link.label}</Link>
                     )
                 }
                 else{
                     return(
-                        <Link className={styles['link']} to={link.href}>{link.label}</Link>
+                        <Link key={link.label} className={styles['link']} to={link.href}>{link.label}</Link>
                     )
                 }
             })}
@@ -40,7 +40,7 @@ const Links: React.FC<{links: Link[], page: Page}> = ({links, page}) => {
 const Menu = (page: Page) => {
     return(
         <div className={styles['menu']}>
-            <img className={styles['btn-menu-full']} src="assets/menu-unselect.svg" alt="menu-unselect"></img>
+            {/* <img className={styles['btn-menu-full']} src="assets/menu-unselect.svg" alt="menu-unselect"></img> */}
             <Links links={menuLinks} page={page}/>
         </div>
     );

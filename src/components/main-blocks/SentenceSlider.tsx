@@ -29,13 +29,14 @@ const StyledSentenceSlider = styled(Slider)`
       box-sizing: border-box;
     }
     .slick-slide slick-active{
+        width: 30%;
         height:80px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .slick-prev:before, .slick-next:before {
-        color: black;
+        color: indigo;
     }
     .slick{
         dots: false;
@@ -56,7 +57,7 @@ export default function SentenceSlider() {
         <StyledSentenceSlider {...settings}>
             {books.map((sentence: Sentence)=>{
                 return(
-                    <div style={{backgroundColor: "pink", width: "100%"}}>
+                    <div key={sentence.id} className={styles['box-outside']}>
                         <div className={styles['box-height']}>
                             <div className={styles['line-clamp']}>
                                 {sentence.content}

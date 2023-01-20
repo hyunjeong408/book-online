@@ -1,14 +1,16 @@
 .review-box{
-    width: 90%;
+    width: 35%;
     /* height: 300px; */
-    padding: 0 10px 10px;
+    padding: 5px 10px 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
+    border: 1px solid gray;
 }
 
-p.box-title {
+.box-title {
     width: 100%;
     text-align: start;
     font-family: 'Noto Sans';
@@ -18,47 +20,34 @@ p.box-title {
 
 div.book-of-the-month{
     width: 98%;
-    height: 250px;
+    height: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
-    border: 1px solid gray;
     padding: 10px;
     box-sizing: content-box;
 }
 
-div.book-img {
-    width: 30%;
-    display: flex;
-    padding: 5px;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-}
-
-div.book-img img{
-    height: 200px;
-}
-
 div.book-info{
-    width: 60%;
+    width: 90%;
     box-sizing: content-box;
 }
 
-p.book-title{
+.book-title{
     text-align: start;
     font-family: 'Noto Sans';
     font-size: 14px;
     font-weight: 700;
+    text-align: center;
 }
 
-p.book-writer{
+.book-writer{
     text-align: start;
     font-family: 'Noto Sans';
     font-size: 12px;
     font-weight: 500;
+    text-align: center;
 }
 
 .line-clamp {

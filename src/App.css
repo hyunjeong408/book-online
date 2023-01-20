@@ -4,3 +4,7 @@
   justify-content: center;
   padding: 5px;
 }
+
+:root {
+  --main-very-pery: #6667AB;
+}

@@ -32,7 +32,7 @@ function Nav() {
     return(
         <nav className={styles.navbar}>
             <div className={styles['logo-container']}>
-                <img src="assets/logo.svg" alt="main-logo"></img>
+                <img src="assets/logo_txt_color.svg" alt="main-logo"></img>
             </div>
             <div className={styles['side-navbar']}>
                 <Links links={links}/>
