@@ -56,7 +56,7 @@ export default function SentenceSlider() {
         <StyledSentenceSlider {...settings}>
             {books.map((sentence: Sentence)=>{
                 return(
-                    <div style={{backgroundColor: "pink", width: "100%"}}>
+                    <div key={sentence.id} style={{backgroundColor: "pink", width: "100%"}}>
                         <div className={styles['box-height']}>
                             <div className={styles['line-clamp']}>
                                 {sentence.content}
