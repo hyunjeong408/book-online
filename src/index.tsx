@@ -27,10 +27,9 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="home" element={<App />} />
-        <Route path="today" element={<Today />} />
-        <Route path="new" element={<New />} />
-        <Route path="best" element={<Best />} />
-        <Route path="steady" element={<Steady />} />
+        <Route path="best" element={<Today />} />
+        <Route path="board" element={<New />} />
+        <Route path="review" element={<Best />} />
         <Route path="read" element={<Detail />} />
         <Route path="about" element={<MyPage />} />
         <Route path="login" element={<Login />} />

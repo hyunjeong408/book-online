@@ -40,7 +40,7 @@ const Links: React.FC<{links: Link[], page: Page}> = ({links, page}) => {
 const Menu = (page: Page) => {
     return(
         <div className={styles['menu']}>
-            <img className={styles['btn-menu-full']} src="assets/menu-unselect.svg" alt="menu-unselect"></img>
+            {/* <img className={styles['btn-menu-full']} src="assets/menu-unselect.svg" alt="menu-unselect"></img> */}
             <Links links={menuLinks} page={page}/>
         </div>
     );

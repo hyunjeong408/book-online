@@ -5,9 +5,9 @@ import SentenceSlider from "./SentenceSlider";
 export default () => {
     return (
         <div className={styles['sentence-box']}>
-            <p className={styles['box-title']}>
+            <div className={styles['box-title']}>
                 한 줄 읽기
-            </p>
+            </div>
             <div className={styles['sentences']}>
                 <SentenceSlider/>
             </div>

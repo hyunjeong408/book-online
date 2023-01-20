@@ -15,20 +15,16 @@
     ],
     "menus": [
         {
-            "label": "오늘의 책",
-            "href": "/today"
-        },
-        {
-            "label": "새로나온 책",
-            "href": "/new"
-        },
-        {
-            "label": "베스트셀러",
+            "label": "BEST",
             "href": "/best"
         },
         {
-            "label": "스테디셀러",
-            "href": "/steady"
+            "label": "자유게시판",
+            "href": "/board"
+        },
+        {
+            "label": "리뷰",
+            "href": "/review"
         },
         {
             "label": "한 줄 읽기",
