@@ -38,7 +38,7 @@ function Login() {
         localStorage.clear();
         localStorage.setItem('token', res.data.accessToken);
         localStorage.setItem('expirationTime', res.data.accessTokenExpiresIn);
-        navigate('/home')
+        navigate('/')
     })
     .catch((err)=>{
       if(err.response.status === 401){
