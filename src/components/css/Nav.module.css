@@ -91,3 +91,34 @@
     height:90%;
     display: inline-block;
 }
+
+.logout-modal{
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    border: 2px solid var(--main-very-pery);
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logout-modal p{
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    font-weight: 700;   
+}
+
+.logout-ok-btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid var(--main-very-pery);
+    background-color: var(--main-very-pery);
+    color: white;
+}
