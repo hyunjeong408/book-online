@@ -1,13 +1,13 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import styles from './css/Booklist.module.css';
+// import styles from './css/Board.module.css';
 
 function Best() {
   return (
-    <div className={styles['layout']}>
+    <div>
       <Header category="베스트셀러"/>
-      <div className={styles['have-sidebar']}>
+      {/* <div className={styles['have-sidebar']}>
             <div className={styles['sidebar']}>
                 <div className={styles['side-menu']}></div>
                 <div className={styles['side-btn']}></div>
@@ -20,7 +20,7 @@ function Best() {
 
                 </div>
             </div>
-        </div>
+        </div> */}
         <Footer/>
     </div>
   );

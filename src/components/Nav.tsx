@@ -25,7 +25,7 @@ function Nav() {
                 <button className={styles['logout-ok-btn']} onClick={logout}>확인</button> 
             </Modal>
             <div className={styles['logo-container']}>
-                <img src="assets/logo_txt_color.svg" alt="main-logo" onClick={()=>{navigate('/');}}></img>
+                <img src="/assets/logo_txt_color.svg" alt="main-logo" onClick={()=>{navigate('/');}}></img>
             </div>
             <div className={styles['side-navbar']}>
                 {/* <Links links={links}/> */}

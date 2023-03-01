@@ -28,7 +28,7 @@
         },
         {
             "label": "한 줄 읽기",
-            "href": "/read"
+            "href": "/sentence"
         }
     ]
 }

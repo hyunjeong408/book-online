@@ -2,59 +2,75 @@
     "sentences": [
         {
             "id": 0,
-            "book-id": 3,
+            "title": "타이틀1",
+            "writer": "박경리",
             "content": "우리가 꿈을 꾸는 방식은 얼마나 흡사했는지. 마치 기적이 일어난 것처럼.",
             "like": 428,
-            "register-by": "ksk"
+            "register-by": "ksk",
+            "tag": "사랑"
         },
         {
             "id": 1,
-            "book-id": 1,
+            "title": "타이틀2",
+            "writer": "박완서",
             "content": "밤에는 오늘에게 인사해. 영원히 기억한다 맹세하진 마. 오늘도 알고 있으니까. 네 맹세가 거짓이라는 것을. 너에겐 사랑하는 내일밖에 없지...",
             "like": 74,
-            "register-by": "이현정"
+            "register-by": "이현정",
+            "tag": "판타지"
         },
         {
             "id": 2,
-            "book-id": 5,
+            "title": "타이틀3",
+            "writer": "조앤롤링",
             "content": "In this moment, I swear, We are infinite.",
             "like": 69,
-            "register-by": "inf"
+            "register-by": "inf",
+            "tag": "스릴러/미스테리"
         },
         {
             "id": 3,
-            "book-id": 7,
+            "title": "타이틀4",
+            "writer": "가와바타",
             "content": "문제는 해결되는 것이 아니라 다른 문제로 대체되면서 사라진다.",
             "like": 48,
-            "register-by": "debut"
+            "register-by": "debut",
+            "tag": "가족/인생"
         },
         {
             "id": 4,
-            "book-id": 2,
+            "title": "타이틀5",
+            "writer": "김진명",
             "content": "여행은 내가 누구인지를 확인하기 위해서가 아니라 내가 누구인지를 잠시 잊어버리러 떠나는 것이 되어가고 있다.",
             "like": 24,
-            "register-by": "me"
+            "register-by": "me",
+            "tag": "과학/기술"
         },
         {
             "id": 5,
-            "book-id": 4,
+            "title": "타이틀6",
+            "writer": "댄브라운",
             "content": "나는 사랑을 구원이라 믿는다.",
             "like": 17,
-            "register-by": "세븐틴"
+            "register-by": "세븐틴",
+            "tag": "역사/현실"
         },
         {
             "id": 6,
-            "book-id": 6,
+            "title": "타이틀7",
+            "writer": "나나나",
             "content": "고독은 혼자 있는 자의 심정이 아니라 욕망하지 않는 것과의 연결을 끊은 자가 확보한 자유다.",
             "like": 13,
-            "register-by": "인원"
+            "register-by": "인원",
+            "tag": "기타"
         },
         {
             "id": 7,
-            "book-id": 3,
+            "title": "타이틀8",
+            "writer": "타타타",
             "content": "그들이 그렇게 한 가장 큰 이유는 그들이 그럴 수 있기 때문일 겁니다. 다른 이유는 없습니다.",
             "like": 6,
-            "register-by": "이제는"
+            "register-by": "이제는",
+            "tag": "사랑"
         }
     ]
 }
