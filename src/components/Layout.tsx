@@ -12,6 +12,7 @@ type Page = {
 }
 
 export default (page: Page) => {
+    console.log(page.category);
     if (page){
         return (
             <div className={styles['layout']}>

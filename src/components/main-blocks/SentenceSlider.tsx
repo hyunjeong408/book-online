@@ -11,7 +11,7 @@ const books = JSON.parse(sentencesJSON).sentences;
 
 type Sentence = {
     id: number,
-    bookId: number,
+    // bookId: number,
     content: string,
     like: number,
     registerBy: string

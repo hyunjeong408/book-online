@@ -9,14 +9,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Today from './pages/Today';
-import New from './pages/New';
-import Best from './pages/Best';
-import Steady from './pages/Steady';
-import Read from './pages/Read';
+import Board from './pages/Board';
 import MyPage from './pages/MyPage';
-import Detail from './pages/Detail';
 import Login from './pages/Login';
 import KakaoLogin from './pages/KakaoLogin';
+import Review from './pages/Review';
+import Sentence from './pages/Sentence';
+import BoardDetail from './pages/BoardDetail';
+import BoardWrite from './pages/BoardWrite';
+import SentenceWrite from './pages/SentenceWrite';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -28,9 +29,11 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="home" element={<App />} />
         <Route path="best" element={<Today />} />
-        <Route path="board" element={<New />} />
-        <Route path="review" element={<Best />} />
-        <Route path="read" element={<Detail />} />
+        <Route path="board" element={<Board />}/>
+        <Route path="board/detail" element={<BoardDetail />}/>
+        <Route path="board/write" element={<BoardWrite />}/>
+        <Route path="review" element={<Review />} />
+        <Route path="sentence" element={<Sentence />} />        <Route path="sentence/write" element={<SentenceWrite />} />
         <Route path="about" element={<MyPage />} />
         <Route path="login" element={<Login />} />
         <Route path="kakaoLogin" element={<KakaoLogin />} />
