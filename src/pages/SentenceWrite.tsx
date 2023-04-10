@@ -53,7 +53,7 @@ function SentenceWrite(){
                     <div className={styles['sentence-write-contents-limit']}>{contents.length}/300</div>
                 </div>
                 <div className={styles['sentence-write-btn-box']}>
-                    <button className={styles['btn-to-list']} onClick={()=>{navigate('/board');}}>목록</button>
+                    <button className={styles['btn-to-list']} onClick={()=>{navigate('/sentence');}}>목록</button>
                     <button className={styles['btn-to-post']} onClick={register}>등록</button>
                 </div>
             </div>

@@ -3,12 +3,22 @@ import React from 'react';
 import styles from '../pages/css/Board.module.css';
 import BoardListComponent from './BoardListComponent';
 
+export type Writer = {
+    authority: string;
+    userEmail: string;
+    userName: string;
+    userPw: string;
+    userSn: number;
+}
+
 export type Post = {
-    id: number;
-    title: string;
     content: string;
+    hits: number;
+    id: number;
+    recNum: number;
+    title: string;
     updateDate: Date;
-    writer: string;
+    writer: Writer;
 }
 
 const BoardList: React.FC<{list: Post[]}> = ({ list }) => {
@@ -20,6 +30,8 @@ const BoardList: React.FC<{list: Post[]}> = ({ list }) => {
                     <th>제목</th>
                     <th>날짜</th>
                     <th>글쓴이</th>
+                    <th>추천수</th>
+                    <th>조회수</th>
                 </tr>  
             </thead>
             <tbody className={styles['board-list-body']}>

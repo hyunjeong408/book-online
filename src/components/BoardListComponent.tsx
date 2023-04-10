@@ -20,7 +20,9 @@ export default function BoardListComponent ({ post }: PostProps): React.ReactEle
       <td>{post.id}</td>
       <td>{post.title}</td>
       <td>{post.updateDate.toString()}</td>
-      <td>{post.writer}</td>
+      <td>{post.writer.userName}</td>
+      <td>{post.recNum}</td>
+      <td>{post.hits}</td>
     </tr>
   );
 };

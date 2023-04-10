@@ -4,6 +4,7 @@ import * as data from './links.json'
 import SearchBox from './SearchBox';
 import Modal from 'react-modal';
 import {useNavigate} from "react-router-dom";
+import axios from "axios";
 
 function Nav() {
     const navigate = useNavigate();
@@ -18,6 +19,27 @@ function Nav() {
     const login = () => {
         navigate('/login');
     }
+
+    // const checkUser = () => {
+    //     const token = localStorage.getItem('token');
+    //     if(token!=null){
+    //         axios.post('/auth/myInfo', {
+    //             token: token
+    //         })
+    //         .then((res)=>{
+    //             console.log(res.data);
+    //         })
+    //         .catch((err)=>{
+    //         if(err.response.status === 401){
+    //             console.log("401 Error");
+    //         }
+    //         })
+    //     }
+    // }
+    // if (localStorage.getItem('token')!=null){
+    //     checkUser();
+    // }
+    
     return(
         <nav className={styles.navbar}>
             <Modal isOpen={logoutModalOpen} className={styles['logout-modal']} ariaHideApp={false}>
