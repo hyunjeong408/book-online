@@ -4,14 +4,15 @@ import Header from '../components/Header';
 import styles from './css/Sentence.module.css';
 import {useNavigate} from "react-router-dom";
 import TagDropdown from '../components/TagDropdown';
+import axios from "axios";
 
 function SentenceWrite(){
     const navigate = useNavigate();
 
     let [bookTitle, setBookTitle] = useState("");
     let [bookWriter, setBookWriter] = useState("");
+    let [tag, setTag] = useState(0);
     let [contents, setContents] = useState("");
-    const [date,setDate] = useState(new Date());
     const inputBookTitle = (e: ChangeEvent<HTMLInputElement>) => {
     	setBookTitle(e.target.value)
     }
@@ -20,6 +21,7 @@ function SentenceWrite(){
     }
     const selectTag = (id: number, value: string)=>{
         console.log(id, value);
+        setTag(id);
     }
     const inputContents = (e: ChangeEvent<HTMLTextAreaElement>) => {
         if(e.target.value.length>300){
@@ -30,8 +32,24 @@ function SentenceWrite(){
         }
     }
     const register = ()=>{
-        setDate(new Date());
-        navigate('/board');
+        const token = localStorage.getItem('token');
+        console.log("register: ", tag);
+        axios.post('/sentence/post', {
+            bookTitle: bookTitle,
+            bookWriter: bookWriter,
+            tag: tag,
+            content: contents,
+            writer_token: token
+          })
+          .then((res)=>{
+              console.log(res.data);
+              navigate('/sentence');
+          })
+          .catch((err)=>{
+            if(err.response.status === 401){
+              console.log("401 Error");
+            }
+          })
     }
     return (
         <div className={styles['layout']}>

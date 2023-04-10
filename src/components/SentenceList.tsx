@@ -1,23 +1,30 @@
 import React from 'react';
 import styles from '../pages/css/Sentence.module.css';
 import SentenceCard from './SentenceCard';
+import { Writer } from './BoardList';
 
-export type SentenceComponent = {
-    id: number;
-    title: string;
-    writer: string;
-    content: string;
-    like: number;
-    tag: string;
-    registerby: string;
+export type Hashtag = {
+    tagId: number;
+    tagName: string;
 }
 
-const SentenceList: React.FC<{list: SentenceComponent[]}> = ({ list }) => {
+export type Sentence = {
+    sentenceId: number;
+    writer: Writer;
+    content: string;
+    title: string;
+    bookWriter: string;
+    updateDate: Date;
+    hashtag: Hashtag;
+    likeNum: number;
+}
+
+const SentenceList: React.FC<{list: Sentence[]}> = ({ list }) => {
     return(
         <div className={styles['sentence-card-list']}>
             {
-                list.map((sentence: SentenceComponent)=>(
-                    <SentenceCard key={sentence.id} sc={sentence}></SentenceCard>
+                list.map((sentence: Sentence)=>(
+                    <SentenceCard key={sentence.sentenceId} sc={sentence}></SentenceCard>
                 ))
             }
         </div>
