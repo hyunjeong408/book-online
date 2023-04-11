@@ -18,6 +18,7 @@ import Sentence from './pages/Sentence';
 import BoardDetail from './pages/BoardDetail';
 import BoardWrite from './pages/BoardWrite';
 import SentenceWrite from './pages/SentenceWrite';
+import ReviewWrite from './pages/ReviewWrite';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -33,7 +34,9 @@ root.render(
         <Route path="board/detail" element={<BoardDetail />}/>
         <Route path="board/write" element={<BoardWrite />}/>
         <Route path="review" element={<Review />} />
-        <Route path="sentence" element={<Sentence />} />        <Route path="sentence/write" element={<SentenceWrite />} />
+        <Route path="review/write" element={<ReviewWrite />}/>
+        <Route path="sentence" element={<Sentence />} />
+        <Route path="sentence/write" element={<SentenceWrite />} />
         <Route path="about" element={<MyPage />} />
         <Route path="login" element={<Login />} />
         <Route path="kakaoLogin" element={<KakaoLogin />} />
