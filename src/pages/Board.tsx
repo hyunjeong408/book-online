@@ -7,9 +7,6 @@ import * as data from '../components/boards.json'
 import {useNavigate} from "react-router-dom";
 import axios from "axios";
 
-const linkString = JSON.stringify(data);
-const boardPosts = JSON.parse(linkString).boards;
-
 function Board() {
   const navigate = useNavigate();
 
@@ -18,18 +15,18 @@ function Board() {
   }
 
   const [posts, setPosts] = useState(null);
+  const [init, setInit] = useState(false);
   // let posts: Post[];
 
-  axios.get('/board/')
-  .then((res)=>{
-    setPosts(res.data); 
-  })
-  .catch((err)=>{
-    if(err.response.status === 401){
-      console.log("401 Error");
-
-    }
-  });
+  if(!init){
+    axios.get('/board/')
+    .then((res)=>{
+      setInit(true);
+      setPosts(res.data);
+    })
+    .catch((err)=>{
+    });
+  }
   
   return (
     <div className={styles['layout']}>

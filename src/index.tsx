@@ -31,7 +31,7 @@ root.render(
         <Route path="home" element={<App />} />
         <Route path="best" element={<Today />} />
         <Route path="board" element={<Board />}/>
-        <Route path="board/detail" element={<BoardDetail />}/>
+        <Route path="board/detail/:id" element={<BoardDetail />}/>
         <Route path="board/write" element={<BoardWrite />}/>
         <Route path="review" element={<Review />} />
         <Route path="review/write" element={<ReviewWrite />}/>

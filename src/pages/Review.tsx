@@ -15,16 +15,17 @@ function Review() {
 
   const [reviews, setReviews] = useState(null);
 
-  axios.get('/review/')
-  .then((res)=>{
-    console.log(res.data);
-    setReviews(res.data); 
-  })
-  .catch((err)=>{
-    if(err.response.status === 401){
-      console.log("401 Error");
-    }
-  });
+  const [init, setInit] = useState(false);
+
+  if(!init){
+    axios.get('/review/')
+    .then((res)=>{
+      setInit(true);
+      setReviews(res.data); 
+    })
+    .catch((err)=>{
+    });
+  }
   
   return (
     <div className={styles['layout']}>

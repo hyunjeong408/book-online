@@ -15,17 +15,16 @@ function Sentence() {
     navigate('/sentence/write');
     }
 
-    axios.get('/sentence/')
-    .then((res)=>{
-        setSentences(res.data); 
-    })
-    .catch((err)=>{
-        if(err.response.status === 401){
-        console.log("401 Error");
-
-        }
-    });
-
+    const [init, setInit] = useState(false);
+    if(!init){
+        axios.get('/sentence/')
+        .then((res)=>{
+            setInit(true);
+            setSentences(res.data); 
+        })
+        .catch((err)=>{
+        });
+    }
     return (
     <div className={styles['layout']}>
         <Header category="한 줄 읽기"/>
