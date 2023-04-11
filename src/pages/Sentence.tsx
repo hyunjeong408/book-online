@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
-import BoardList from '../components/BoardList';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import styles from './css/Sentence.module.css';
 import {useNavigate} from "react-router-dom";
 import SentenceList from '../components/SentenceList';
-import * as data from '../components/sentences.json'
 import axios from "axios";
 
-const linkString = JSON.stringify(data);
 
 function Sentence() {
     const navigate = useNavigate();
