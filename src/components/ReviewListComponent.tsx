@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../pages/css/Review.module.css';
 import {NavigateFunction, useNavigate} from "react-router-dom";
 import { Review } from './ReviewList';
+import axios from "axios";
 
 export type ReviewProps = {
     review: Review;
@@ -9,11 +10,20 @@ export type ReviewProps = {
 
 export default function ReviewListComponent ({ review }: ReviewProps): React.ReactElement{
   const navigate: NavigateFunction = useNavigate();
+  const reviewId = {
+    id: review.reviewId,
+  }
   const openBoardDetail = ()=>{
+    axios.put('/review/detail/hit', reviewId)
+    .then((res)=>{
+    })
+    .catch((err)=>{
+      console.log(err);
+    });
     navigate({
-      pathname: "/review/detail"
+      pathname: `/review/detail/:${review.reviewId}`
     },
-    { state: review});
+    {state: review});
   }
   return (
     <tr className={styles['board-list-component']} onClick={openBoardDetail}>

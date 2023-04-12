@@ -37,21 +37,6 @@
     width: 100%;
 }
 
-.sentence-write-title input{
-    height: 50px;
-    width: 70%;
-    justify-content: center;
-    border: 2px solid var(--main-very-pery);
-    border-radius: 10px;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    font-family: 'Noto Sans';
-    font-size: 14px;
-    font-weight: 500;
-    box-sizing: border-box;
-}
-
 .board-list-table{
     width:100%;
     border-collapse: collapse;
@@ -91,6 +76,136 @@ tr:last-child td:last-child {
     border-bottom-right-radius: 6px;
 }
 
+.board-detail-box{
+    background-color: #f3f3f3;
+    border: transparent;
+    border-radius: 15px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.board-info-box-a{
+    display: flex;
+    box-sizing: border-box;
+    height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board-title{
+    text-align: start;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px 0px 10px 20px;
+    width: 70%;
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+
+.board-hits{
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 20px 10px 0px;
+    font-family: 'Noto Sans';
+    font-size: 13px;
+    font-weight: 300;
+    color: black;
+    text-align: end;
+}
+.board-info-box-b{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.board-info-txt{
+    font-family: 'Noto Sans';
+    font-size: 10px;
+    font-weight: 300;
+    color: black;
+}
+
+.board-writer{
+    width: 100px;
+    font-family: 'Noto Sans';
+    font-size: 10px;
+    font-weight: 400;
+    color: black;
+    text-align: start;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.board-info-detail-box{
+    width: 100%;
+    height: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20px;
+}
+
+.board-info-rec{
+    display: flex;
+    flex-direction: row;
+    width: 45px;
+    justify-content: end;
+}
+.board-info-reply{
+    display: flex;
+    flex-direction: row;
+    width: 45px;
+    justify-content: end;
+}
+
+.board-division-line{
+    background-color: antiquewhite;
+    border-top: 1px solid var(--main-very-pery);
+    margin: 5px 5px;
+}
+
+.board-contents{
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: start;
+    font-family: 'Noto Sans';
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
+
+.board-rec-btn-box{
+    height: 50px;
+    box-sizing: border-box;
+    padding:5px;
+}
+
+.board-btn-box{
+    height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.board-btn-box button{
+    width: 50px;
+    height: 20px;
+    background-color: var(--main-very-pery);
+    font-family: 'Noto Sans';
+    font-size: 12px;
+    font-weight: 500;
+    color: whitesmoke;
+    border: transparent;
+    border-radius: 10px;
+    margin: 0px 5px;
+}
 
 .card-like{
     display: flex;
@@ -143,7 +258,7 @@ tr:last-child td:last-child {
 }
 
 .sentence-write-info{
-    width: 70%;
+    width: 90%;
     height: 130px;
     display: flex;
     flex-direction: column;
@@ -232,4 +347,31 @@ tr:last-child td:last-child {
     font-size: 13px;
     font-weight: 500;
     color: whitesmoke;
+}
+
+.modalBox{
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    border: 2px solid var(--main-very-pery);
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    font-weight: 700;  
+}
+
+.modalBox button {
+    width: 100px;
+    background-color: var(--main-very-pery);
+    text-align: center;
+    color: azure;
+    border-color: transparent;
 }

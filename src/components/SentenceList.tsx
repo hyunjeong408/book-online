@@ -9,7 +9,7 @@ export type Hashtag = {
 }
 
 export type Sentence = {
-    sentenceId: number;
+    id: number;
     writer: Writer;
     content: string;
     title: string;
@@ -24,7 +24,7 @@ const SentenceList: React.FC<{list: Sentence[]}> = ({ list }) => {
         <div className={styles['sentence-card-list']}>
             {
                 list.map((sentence: Sentence)=>(
-                    <SentenceCard key={sentence.sentenceId} sc={sentence}></SentenceCard>
+                    <SentenceCard key={sentence.id} sc={sentence}></SentenceCard>
                 ))
             }
         </div>

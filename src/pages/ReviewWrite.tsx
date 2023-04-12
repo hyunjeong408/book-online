@@ -46,15 +46,13 @@ function ReviewWrite(){
               navigate('/review');
           })
           .catch((err)=>{
-            if(err.response.status === 401){
-              console.log("401 Error");
-            }
+            console.log(err);
           })
     }
     return (
         <div className={styles['layout']}>
             <Header category="리뷰"/>
-            <div className={styles['page-title']}>자유게시판</div>
+            <div className={styles['page-title']}>리뷰</div>
             <div className={styles['page-title-bw']}>글쓰기</div>
             <div className={styles['sentence-write-box']}>
                 <div className={styles['sentence-write-title']}>

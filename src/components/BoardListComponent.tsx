@@ -11,18 +11,14 @@ export type PostProps = {
 export default function BoardListComponent ({ post }: PostProps): React.ReactElement{
   const navigate: NavigateFunction = useNavigate();
   const postId = {
-    id: post.id,
-    updateNum: 1
+    id: post.id
   }
   const openBoardDetail = ()=>{
     axios.put('/board/detail/hit', postId)
     .then((res)=>{
     })
     .catch((err)=>{
-      if(err.response.status === 401){
-        console.log("401 Error");
-
-      }
+      console.log(err);
     });
     navigate({
       pathname: `/board/detail/:${post.id}`

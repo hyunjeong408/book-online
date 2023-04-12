@@ -15,12 +15,12 @@ function Review() {
 
   const [reviews, setReviews] = useState(null);
 
-  const [init, setInit] = useState(false);
+  const [init, setInit] = useState(true);
 
-  if(!init){
+  if(init){
     axios.get('/review/')
     .then((res)=>{
-      setInit(true);
+      setInit(false);
       setReviews(res.data); 
     })
     .catch((err)=>{
@@ -30,7 +30,7 @@ function Review() {
   return (
     <div className={styles['layout']}>
       <Header category="리뷰"/>
-      <div className={styles['page-title']}>자유게시판</div>
+      <div className={styles['page-title']}>리뷰</div>
       <div className={styles['board-div']}>
         {reviews &&(
           <ReviewList list={reviews}/>
