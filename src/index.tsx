@@ -19,6 +19,7 @@ import BoardDetail from './pages/BoardDetail';
 import BoardWrite from './pages/BoardWrite';
 import SentenceWrite from './pages/SentenceWrite';
 import ReviewWrite from './pages/ReviewWrite';
+import ReviewDetail from './pages/ReviewDetail';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -34,6 +35,7 @@ root.render(
         <Route path="board/detail/:id" element={<BoardDetail />}/>
         <Route path="board/write" element={<BoardWrite />}/>
         <Route path="review" element={<Review />} />
+        <Route path="review/detail/:id" element={<ReviewDetail />}/>
         <Route path="review/write" element={<ReviewWrite />}/>
         <Route path="sentence" element={<Sentence />} />
         <Route path="sentence/write" element={<SentenceWrite />} />
