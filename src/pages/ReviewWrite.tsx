@@ -54,26 +54,26 @@ function ReviewWrite(){
             <Header category="리뷰"/>
             <div className={styles['page-title']}>리뷰</div>
             <div className={styles['page-title-bw']}>글쓰기</div>
-            <div className={styles['sentence-write-box']}>
-                <div className={styles['sentence-write-title']}>
+            <div className={styles['review-write-box']}>
+                <div className={styles['review-write-title']}>
                     <input type="text" onChange={inputTitle} placeholder="제목"></input>
                 </div>
-                <div className={styles['sentence-write-info']}>
-                    <div className={styles['sentence-write-info-input']}>
+                <div className={styles['review-write-info']}>
+                    <div className={styles['review-write-info-input']}>
                         책제목
                         <input type="text" onChange={inputBookTitle} placeholder="제목"></input>
                     </div>
-                    <div className={styles['sentence-write-info-input']}>
+                    <div className={styles['review-write-info-input']}>
                         작가
                         <input type="text" onChange={inputBookWriter} placeholder="작가"></input>
                     </div>
                     <TagDropdown propFunction={selectTag}/>
                 </div>
-                <div className={styles['sentence-write-contents']}>
+                <div className={styles['review-write-contents']}>
                     <textarea value={contents} onChange={(e)=>inputContents(e)} placeholder="내용"></textarea>
                 </div>
-                <div className={styles['sentence-write-btn-box']}>
-                    <button className={styles['btn-to-list']} onClick={()=>{navigate('/sentence');}}>목록</button>
+                <div className={styles['review-write-btn-box']}>
+                    <button className={styles['btn-to-list']} onClick={()=>{navigate('/review');}}>목록</button>
                     <button className={styles['btn-to-post']} onClick={register}>등록</button>
                 </div>
             </div>

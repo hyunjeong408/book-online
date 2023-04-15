@@ -39,7 +39,8 @@ const SentenceCard: React.FC<{sc: Sentence}> = ({ sc }) => {
         }
         // likeClicked? setLikeClicked(false):setLikeClicked(true);
     }
-    if(init){
+    console.log(sc.content);
+    if(init && token){
         axios.get('/sentence/detail/',{
             params: { 
                 id: sc.id,
@@ -47,7 +48,6 @@ const SentenceCard: React.FC<{sc: Sentence}> = ({ sc }) => {
             },
           })
         .then((res)=>{
-            console.log(res.data);
             setInit(false);
             if(res.data){
                 setLikeClicked(true);
@@ -71,7 +71,7 @@ const SentenceCard: React.FC<{sc: Sentence}> = ({ sc }) => {
                 </div>
             </div>
             <div className={styles['card-content']}>
-                {sc.content}
+                <p>{sc.content}</p>
             </div>
             <div className={styles['card-info-b']}>
                 {sc.title} | {sc.bookWriter}

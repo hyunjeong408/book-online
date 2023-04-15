@@ -20,6 +20,7 @@ function Sentence() {
         axios.get('/sentence/')
         .then((res)=>{
             setInit(true);
+            console.log(res.data);
             setSentences(res.data); 
         })
         .catch((err)=>{

@@ -115,6 +115,17 @@
     font-weight: 700;   
 }
 
+.joinModalBox input{
+    width: 80%;
+    height: 30px;
+    padding: 3px;
+    font-family: 'Noto Sans';
+    font-size: 12px;
+    font-weight: 300;
+    border: 1px solid var(--main-very-pery-50);
+    border-radius: 10px;
+}
+
 .btnBox{
     width: 90%;
     display: flex;
@@ -124,9 +135,11 @@
 }
 
 .joinModalBox button {
-    width: 100px;
+    width: 80px;
+    height: 35px;
     background-color: var(--main-very-pery);
     text-align: center;
     color: azure;
     border-color: transparent;
+    border-radius: 20px;
 }
