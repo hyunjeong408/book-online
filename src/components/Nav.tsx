@@ -58,7 +58,7 @@ function Nav() {
                     </button>
                 </div>)
                 :(<div>
-                    <button onClick={login}>
+                    <button className={styles['login']} onClick={login}>
                         로그인
                     </button>
                 </div>)

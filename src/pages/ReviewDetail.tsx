@@ -70,14 +70,14 @@ function ReviewDetail(){
                     </div>
                 </div>
                 <div className={styles['board-division-line']}></div>
-                <div className={styles['sentence-write-info']}>
-                    <div className={styles['sentence-write-info-input']}>
+                <div className={styles['review-write-info']}>
+                    <div className={styles['review-write-info-input']}>
                         책제목 | {detail.bookTitle}
                     </div>
-                    <div className={styles['sentence-write-info-input']}>
+                    <div className={styles['review-write-info-input']}>
                         작가 | {detail.bookWriter}
                     </div>
-                    <div className={styles['sentence-write-info-input']}>
+                    <div className={styles['review-write-info-input']}>
                         태그 | {detail.hashtag.tagName}
                     </div>
                 </div>
