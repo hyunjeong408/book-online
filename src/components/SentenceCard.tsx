@@ -39,7 +39,6 @@ const SentenceCard: React.FC<{sc: Sentence}> = ({ sc }) => {
         }
         // likeClicked? setLikeClicked(false):setLikeClicked(true);
     }
-    console.log(sc.content);
     if(init && token){
         axios.get('/sentence/detail/',{
             params: { 

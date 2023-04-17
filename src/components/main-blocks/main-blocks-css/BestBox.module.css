@@ -45,16 +45,10 @@
     font-weight: 500;
 }
 
-.writing-reply{
-    color: var(--main-very-pery);
-    font-weight: bold;
-    text-align: start;
-    font-family: 'Noto Sans';
-    font-size: 11px;
-}
 .writing-recnum{
     text-align: start;
     font-family: 'Noto Sans';
     font-size: 11px;
-    font-weight: 300;
+    font-weight: 500;
+    color: var(--main-very-pery);
 }

@@ -1,27 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from './main-blocks-css/BestBox.module.css'
 import * as data from '../books.json'
+import { Post } from "../BoardList";
+import axios from "axios";
 
-const writingsJSON = JSON.stringify(data);
-const writings = JSON.parse(writingsJSON).books;
-
-type Writing = {
-    title: string;
-    id: number; //rec
-    price: number; //reply
-}
-
-const Writings: React.FC<{writings: Writing[]}> = ({writings}) => {
+const HotBoards: React.FC<{boards: Post[]}> = ({boards}) => {
     return(
         <div className={styles['writing-list']}>
-            {writings.map((writing: Writing)=>{
+            {boards.map((board: Post)=>{
                 return(
-                <div key={writing.id}className={styles['list-item']}>
+                <div key={board.id}className={styles['list-item']}>
                     <div className={styles['writing-title']}>
-                        {writing.title} <span className={styles['writing-reply']}>{parseInt((writing.price/100).toString())}</span>
+                        {board.title}
                     </div>
                     <div className={styles['writing-recnum']}>
-                        {writing.id}
+                        {board.recNum}
                     </div>
                 </div>)
             })}
@@ -30,12 +23,24 @@ const Writings: React.FC<{writings: Writing[]}> = ({writings}) => {
 }
 
 export default () => {
+    const [boards, setBoards] = useState([]);
+    const [init, setInit] = useState(false);
+    if(!init){
+        axios.get('/board/hot')
+        .then((res)=>{
+            setInit(true);
+            setBoards(res.data);
+        })
+        .catch((err)=>{
+        });
+    }
+
     return (
         <div className={styles['best-box']}>
             <div className={styles['box-title']}>
-                BEST 리뷰
+                BEST 게시글
             </div>
-            <Writings writings={writings}/>
+            <HotBoards boards={boards}/>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -6,16 +6,8 @@ import styled from "styled-components";
 
 import * as data from '../sentences.json';
 import styles from './main-blocks-css/SentenceBox.module.css'
-const sentencesJSON = JSON.stringify(data);
-const books = JSON.parse(sentencesJSON).sentences;
-
-type Sentence = {
-    id: number,
-    // bookId: number,
-    content: string,
-    like: number,
-    registerBy: string
-}
+import { Sentence } from "../SentenceList";
+import axios from "axios";
 
 const StyledSentenceSlider = styled(Slider)`
     .slick-slide{
@@ -52,10 +44,32 @@ export default function SentenceSlider() {
       slidesToShow: 3,
       slidesToScroll: 3
     };
+    const [init, setInit] = useState(false);
+    const [recSentences, setRecStc] = useState([]);
+    let token = localStorage.getItem('token');
+
+    if(!init){
+        if(token==null){
+            token = "";
+        }
+        axios.get('/sentence/recommend',{
+            params: { 
+                token: token
+            },
+        })
+        .then((res)=>{
+            setInit(true);
+            setRecStc(res.data);
+        })
+        .catch((err)=>{
+        });
+    }
+
+
     return (
       <div>
         <StyledSentenceSlider {...settings}>
-            {books.map((sentence: Sentence)=>{
+            {recSentences.map((sentence: Sentence)=>{
                 return(
                     <div key={sentence.id} className={styles['box-outside']}>
                         <div className={styles['box-height']}>

@@ -10,6 +10,7 @@ import axios from "axios";
 function Sentence() {
     const navigate = useNavigate();
     const [sentences, setSentences] = useState(null);
+    let token = localStorage.getItem('token');
 
     const sentenceWrite = ()=>{
     navigate('/sentence/write');
@@ -20,7 +21,6 @@ function Sentence() {
         axios.get('/sentence/')
         .then((res)=>{
             setInit(true);
-            console.log(res.data);
             setSentences(res.data); 
         })
         .catch((err)=>{
